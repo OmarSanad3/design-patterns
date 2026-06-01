@@ -1,0 +1,13 @@
+name: Test WorkFlow
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  echo-hello-world:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Print Message to Console
+      run: echo "Hello from the Ubuntu machine!"
