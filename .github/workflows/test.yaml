@@ -11,3 +11,12 @@ jobs:
     steps:
     - name: Print Message to Console
       run: echo "Hello from the Ubuntu machine!"
+
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Make script executable
+      run: chmod +x scripts/days.sh
+
+    - name: Run shell script
+      run: ./scripts/days.sh
